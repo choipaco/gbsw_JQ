@@ -28,12 +28,11 @@ function Student(){
 
           <div className={styles.headLine}>
             <div className={styles.date}>
-            <p><label>상담 날짜을 어떻게 할까요?</label></p>
+            <p><label>상담 날짜와 시간을 어떻게 할까요?</label></p>
               날짜:<input type={"date"} id="date" min={y+"-"+m+"-"+d} defaultValue={y+"-"+m+"-"+d} className={styles.inputText}></input>
             </div>
 
             <div className={styles.time}>
-              <p><label>상담 시간을 어떻게 할까요?</label></p>
               <div>점심시간: <input type={"radio"} name={"time"} value="Lunch"/></div>
               <div>저녁시간: <input type={"radio"} name={"time"} value="dinner"/></div>
               <div>야자시간: <input type={"radio"} name={"time"} value="selfstudy"/></div>

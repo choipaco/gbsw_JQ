@@ -1,0 +1,49 @@
+.outImg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://ldb-phinf.pstatic.net/20220911_116/1662869096483U7Qb1_JPEG/%B8%DE%C0%CE%BC%A62.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+.inImg{
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.504);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundEmail{
+  width: 60vw;
+  height: 60vh;
+
+  border: 2px solid black;  
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.EmailTitle{
+  position: relative;
+  bottom: 10vw;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+.felxEmail{
+  height: 100%;
+  width: 39vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.inputText:focus{
+  outline: 1px solid blue;
+}
+.inputText{
+  border: none;
+  border-radius: 2px;
+  outline: 0.1rem solid black;
+}

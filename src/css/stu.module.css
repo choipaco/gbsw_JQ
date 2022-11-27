@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
 }
 .outImg{
   width: 100vw;
-  height: 1000px;
+  height: 110vh;
   background-image: url(https://ldb-phinf.pstatic.net/20220911_116/1662869096483U7Qb1_JPEG/%B8%DE%C0%CE%BC%A62.jpg);
   background-position: center;
   background-size: cover;
@@ -40,12 +40,17 @@ body::-webkit-scrollbar {
   margin: 0 10px;
 }
 .LastheadLine{
-
+  
   padding: 2%;
   margin: 0 10px;
 }
 .inputText:focus{
   outline: 1px solid blue;
+}
+.inputText{
+  border: none;
+  border-radius: 2px;
+  outline: 0.1rem solid black;
 }
 p{
   margin-top: 0;
