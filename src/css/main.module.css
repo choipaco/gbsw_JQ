@@ -55,7 +55,7 @@ body{
 
   width: 100vw;
   height: 100vh;
-  
+  align-content: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,6 +82,7 @@ a{
   background-color: white;
   display: flex;
   align-items: center;
+
   justify-content: center;
   transition: 0.3s;
 }

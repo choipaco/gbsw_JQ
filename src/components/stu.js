@@ -1,11 +1,11 @@
 import styles from "../css/stu.module.css";
 
-
 function Student(){
   let now = new Date();
   let y = now.getFullYear();
   let m = now.getMonth() + 1; 
   let d = now.getDate();
+  
 
 
   return(
@@ -15,7 +15,10 @@ function Student(){
       <div className={styles.stuDiv}>
         
         <form>
-          <div className={styles.stuTitle}>👨‍🎓학생용</div>
+          <div className={styles.flexTitle}>
+            <div className={styles.stuTitle}>👨‍🎓학생용</div> 
+
+          </div>
           <div className={styles.headLine}>
             <div className={styles.choice}>
               <p><label>어떤 상담을 원하시나요?</label></p>
@@ -51,7 +54,7 @@ function Student(){
             <input type={"submit"} id="submit" value={"신청하기"} className={styles.submit}></input>
        
           </div>
-          </form>   
+        </form>
       </div>
     </div>
     </div>

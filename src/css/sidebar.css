@@ -1,0 +1,116 @@
+.dischecbox{
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  z-index: 1000;
+}
+.dischecbox input{
+  display: none;
+}
+.navtoggle{
+  display: none;
+}
+
+/* 햄버거 들어갈 공간 label 설정 
+    relative  줌 
+*/
+.navtoggle + label{
+    display: block;
+    width:2.5rem;
+    height:1.5rem;
+    position:relative;
+    cursor:pointer;
+}
+
+/* span 으로 햄버거 만들기  
+    absolute 주고 아래에 한 줄씩 위치 처리
+*/
+.navtoggle+label>span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius: 30px;
+    background-color: black;
+    transition:all .35s;
+    position:absolute;
+}
+
+
+/* span 햄버거 한 줄 한 줄 처리 */
+
+.navtoggle + label>span:nth-child(1){
+    top:0;
+}
+.navtoggle + label>span:nth-child(2){
+    top:50%;
+    transform:translateY(-50%)
+}
+.navtoggle + label>span:nth-child(3){
+    bottom:0;
+}
+
+
+
+/* input box checked 쳌박스 눌리면 모션 주기 */
+
+
+.navtoggle:checked + label>span:nth-child(1){
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+.navtoggle:checked + label>span:nth-child(2){
+    opacity:0;
+}
+.navtoggle:checked + label>span:nth-child(3){
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+
+
+
+.sidebar{
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  z-index: 100;
+  width: 20vw;
+  height: 100%;
+  border-left: 1px solid black;
+  background-color: white;
+  transition: 0.5s;
+}
+.sidebar > div{
+  margin-top: 100px;
+}
+.navStyle div{
+  margin-left: 10px ;
+  margin-top: 10px;
+}
+.navStyle div a{
+  
+  transition: 0.3s;
+  color: black;
+  font-weight: 550;
+  font-size: 17px;
+}
+.navStyle div a:hover{
+  font-size: 20px;
+  font-weight: 800;
+}
+.navStyle div a:active{
+  color: rgb(116, 116, 116);
+}
+.noneSidebar{
+  transform: translateX(500px);
+
+}
+.noneSidebar div{
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .sidebar{
+    width: 50vw;
+  }
+}
